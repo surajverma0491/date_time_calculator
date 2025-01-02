@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date and Time Calculator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Date and Time Calculator</h1>
+        <form method="POST">
+            <label for="date">Enter Date (DD-MM-YYYY):</label>
+            <input type="text" id="date" name="date" placeholder="DD-MM-YYYY" required><br>
+            
+            <label for="time">Enter Time (HH:MM:SS):</label>
+            <input type="text" id="time" name="time" placeholder="HH:MM:SS" required><br>
+
+            <label for="hours">Enter Number of Hours to Add:</label>
+            <input type="number" id="hours" name="hours" required><br>
+
+            <input type="submit" value="Calculate">
+        </form>
+
+        {% if new_datetime %}
+            <h2 class="result">New Date and Time: {{ new_datetime }}</h2>
+        {% endif %}
+    </div>
+</body>
+</html>
