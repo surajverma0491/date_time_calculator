@@ -8,11 +8,14 @@ A web application built using Flask that calculates a new date and time by addin
 - Display the resulting new date and time.
 
 ## Project Structure
-template -> idex.html
-static -> style.css
-Procfile
-requirements.txt
-app.py
+/date_time_calculator
+├── app.py               # Main Flask application file
+├── requirements.txt     # List of dependencies
+├── Procfile             # Command to run the application
+├── templates/           # HTML templates
+│   └── index.html       # Main web page
+├── static/              # Static files (CSS, JS, images)
+└── style.css            # Optional separate CSS file
 
 ## Run Locally
 1. Clone the repo:  
