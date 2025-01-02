@@ -9,19 +9,19 @@ A web application built using Flask that calculates a new date and time by addin
 
 ## Project Structure
 date_time_calculator
-# Main Flask application file
+## Main Flask application file
 ├── app.py    
-# List of dependencies
+## List of dependencies
 ├── requirements.txt 
-# Command to run the application
+## Command to run the application
 ├── Procfile  
-# HTML templates
+## HTML templates
 ├── templates
-# Main web page
+## Main web page
 │   └── index.html 
-# Static files (CSS, JS, images)
+## Static files (CSS, JS, images)
 ├── static
-# Optional separate CSS file
+## Optional separate CSS file
 └── style.css
 
 ## Run Locally
